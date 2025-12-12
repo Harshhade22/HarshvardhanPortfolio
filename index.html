@@ -25,6 +25,7 @@
           <a href="#skills">Skills</a>
           <a href="#projects">Work Experience</a>
           <a href="#contact">Contact</a>
+          <button id="theme-toggle">🌙</button>
         </nav>
       </div>
     </header>
@@ -34,25 +35,77 @@
       <section id="about" class="card">
         <h2>About Me</h2>
         <p>
-          I am a Frontend Engineer with 2+ years of experience in React.js
-          development. Proficient in integrating REST APIs and optimizing
-          performance for responsive user interfaces. Familiar with Ant Design,
-          Postman, Git, and JIRA in Agile environments. Committed to creating
-          user-centric applications and exploring technology roles focused on
-          product development.
+          Frontend Engineer with 2+ years of experience building
+          enterprise-scale React applications with a strong focus on
+          performance, clean architecture, and usability. Skilled in React 18,
+          TypeScript, Redux Toolkit, REST integrations, and Ant Design. Proven
+          impact in reducing load times, improving data-flow stability, and
+          collaborating in Agile/Scrum environments. Experienced in working with
+          large, regulated systems like Consent Management Platforms, making me
+          well-aligned with BFSI-level engineering standards. Seeking roles that
+          involve product engineering, advanced frontend architecture, and
+          scalable UI development.
         </p>
       </section>
 
       <!--Skills Secion-->
       <section id="skills" class="card">
         <h2>Skills</h2>
-        <ul class="skills-list">
-          <li>HTML</li>
-          <li>CSS</li>
-          <li>Javascript</li>
-          <li>React.js</li>
-          <li>Node Js</li>
-        </ul>
+
+        <div class="skills-table">
+          <div class="skills-row">
+            <h3>Core Skills</h3>
+          </div>
+
+          <div class="skills-row">
+            <span class="skills-category">Frontend Technologies</span>
+            <span class="skills-items">
+              React.js (Hooks, React 18), TypeScript, JavaScript (ES6+), Redux
+              Toolkit, React Query, Axios, HTML5, CSS3, Bootstrap, Ant Design
+            </span>
+          </div>
+
+          <div class="skills-row">
+            <span class="skills-category">Architecture & Engineering</span>
+            <span class="skills-items">
+              Micro-frontend concepts, Component-driven development, Clean
+              architecture, API integration patterns, Modular design,
+              Performance optimization
+            </span>
+          </div>
+
+          <div class="skills-row">
+            <span class="skills-category">Tools & Ecosystem</span>
+            <span class="skills-items">
+              Git, GitHub, Postman, Chrome DevTools, NPM, JIRA, VS Code,
+              Webpack/Vite basics, Lighthouse, React Profiler
+            </span>
+          </div>
+
+          <div class="skills-row">
+            <span class="skills-category">Cloud & DevOps Exposure</span>
+            <span class="skills-items">
+              AWS (S3, CloudFront basics), GitHub Actions (CI/CD), Docker
+              (fundamental understanding)
+            </span>
+          </div>
+
+          <div class="skills-row">
+            <span class="skills-category">UI/UX & Accessibility</span>
+            <span class="skills-items">
+              Responsive UI, Pixel-perfect implementation, Figma handoff, WCAG
+              2.2 guidelines, Semantic HTML, A11y best practices
+            </span>
+          </div>
+
+          <div class="skills-row">
+            <span class="skills-category">Soft Skills</span>
+            <span class="skills-items">
+              Agile/Scrum, Client collaboration, Debugging & problem-solving,
+              Cross-functional teamwork
+            </span>
+          </div>
+        </div>
       </section>
 
       <!--Projects-->
@@ -60,7 +113,8 @@
         <h2>Work Experience</h2>
         <ul class="experience-list">
           <li class="experience-item">
-            Software Engineer - Cybage Software Pvt. Ltd., Pune, India <span class="muted">(May 2023 – Present)</span>
+            Software Engineer - Cybage Software Pvt. Ltd., Pune, India
+            <span class="muted">(May 2023 – Present)</span>
             <ul>
               <li>
                 Developing and maintaining the Diagnose module of an
@@ -126,12 +180,15 @@
       <!--Contact Section-->
       <section id="contact" class="card">
         <h2>Contact Me</h2>
-        <form class="contact-form" onsubmit="event.preventDefault(); alert('Thanks for Submitting your details')">
+        <form
+          class="contact-form"
+          onsubmit="event.preventDefault(); alert('Thanks for Submitting your details')"
+        >
           <label for="name">Name:</label>
-          <input type="text" id="text"/>
+          <input type="text" id="text" />
 
           <label for="email">Email:</label>
-          <input type="email" id="email"/>
+          <input type="email" id="email" />
 
           <label for="message">Message:</label>
           <textarea id="message"></textarea>
@@ -140,13 +197,13 @@
         </form>
       </section>
     </main>
-    
+
     <footer class="container footer">
-        <p class="muted small">&copy; <span id="year"></span> Harshvardhan Avinash Hade</p>
+      <p class="muted small">
+        &copy; <span id="year"></span> Harshvardhan Avinash Hade
+      </p>
     </footer>
 
-    <script>
-        document.getElementById('year').textContent = new Date().getFullYear()
-    </script>
+    <script src="/HTML/portfolio.js"></script> 
   </body>
 </html>
