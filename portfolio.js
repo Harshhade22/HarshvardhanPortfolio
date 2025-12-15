@@ -1,5 +1,8 @@
 const sections = document.querySelectorAll("section");
 const navLinks = document.querySelectorAll("header nav a");
+const hamburger = document.getElementById("hamburger")
+const nav = document.getElementById("main-nav")
+
 const options = {
     root: null,
     threshold: 0.6,
@@ -43,4 +46,14 @@ toggleBtn.addEventListener("click", () => {
     }else{
         toggleBtn.textContent = "🌙"
     }
+})
+
+hamburger.addEventListener("click",()=> { 
+    nav.classList.toggle("open") 
+})
+
+document.querySelectorAll(".main-nav a").forEach(link => {
+    link.addEventListener("click", () => {
+        nav.classList.remove("open")
+    })
 })

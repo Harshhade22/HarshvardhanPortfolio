@@ -223,17 +223,44 @@ h3 {
   margin-left: 10px;
 }
 
+.hamburger {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 1.8rem;
+  color: var(--text-color);
+  cursor: pointer;
+}
+
 @media (max-width: 720px) {
   .header-inner {
     flex-direction: column;
     align-items: flex-start;
     gap: 12px;
   }
-  .main-nav a {
-    margin-left: 10px;
-    font-size: 14px;
-    padding: 6px 8px;
+  .main-nav {
+    position: absolute;
+    top: 100%;
+    right: 20px;
+    background: var(--card-bg);
+    border-radius: 10px;
+    padding: 12px;
+    display: none;
+    flex-direction: column;
+    gap: 8px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
   }
+
+  .main-nav.open {
+    display: flex;
+  }
+  
+  .main-nav a,
+  .main-nav button {
+    margin: 0;
+    text-align: left;
+  }
+
   .container {
     padding: 16px;
   }
@@ -251,5 +278,9 @@ h3 {
 
   .skills-items {
     font-size: 13px;
+  }
+
+  .hamburger {
+    display: block;
   }
 }
